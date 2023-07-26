@@ -26,7 +26,7 @@ const Header = () => {
             </nav>
             <div className='m-16'>
             <button class="bg-primary hover:text-secondary active:bg-secondary focus:outline-none focus:ring focus:bg-secondary ...">
-  Loginn
+  Login
 </button>
             </div>
       </div>
