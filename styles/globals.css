@@ -12,3 +12,9 @@ body {
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+
+
+
+.btn-primary{
+  @apply text-white px-[45px] py-[8px] rounded-3xl bg-secondary cursor-pointer hover:opacity-70 transition-all
+}
