@@ -1,5 +1,5 @@
 
-
+'use client'
 import { useState } from "react";
 import { FaUserAlt, FaShoppingCart } from "react-icons/fa";
 import { ImSearch } from "react-icons/im";
@@ -18,7 +18,7 @@ const Header = () => {
           <ul className="flex uppercase items-center">
             <li className="nav-item active px-[5px] hover:text-secondary">
               <a className="nav-link" href="index.html">
-                Home <span class="sr-only">(current)</span>
+                Home <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item px-[5px] hover:text-secondary">
