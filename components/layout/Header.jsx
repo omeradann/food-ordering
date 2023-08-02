@@ -1,9 +1,10 @@
-
 'use client'
 import { useState } from "react";
 import { FaUserAlt, FaShoppingCart } from "react-icons/fa";
 import { ImSearch } from "react-icons/im";
 import Logo from "../ui/Logo";
+import Search from "../ui/Search";
+
 
 const Header = () => {
   const [isSearchModal, setisSearchModal] = useState(false);
@@ -11,7 +12,7 @@ const Header = () => {
   return (
     <div className="h-[5.5rem] bg-primary">
       <div className="container mx-auto text-white flex justify-between items-center h-full">
-        <div className="m-10 relative left-10">
+        <div className="m-10 relative left-5">
           <Logo />
         </div>
         <nav>
@@ -21,17 +22,17 @@ const Header = () => {
                 Home <span className="sr-only">(current)</span>
               </a>
             </li>
-            <li className="nav-item px-[5px] hover:text-secondary">
+            <li className="nav-item px-[10px] hover:text-secondary">
               <a className="nav-link" href="menu.html">
                 Menu
               </a>
             </li>
-            <li className="nav-item px-[5px] hover:text-secondary">
+            <li className="nav-item px-[10px] hover:text-secondary">
               <a className="nav-link" href="about.html">
                 About
               </a>
             </li>
-            <li className="nav-item px-[5px] hover:text-secondary">
+            <li className="nav-item px-[10px] hover:text-secondary">
               <a className="nav-link" href="book.html">
                 Book Table
               </a>
@@ -40,29 +41,30 @@ const Header = () => {
         </nav>
         <div className="flex m-10 items-center">
           <button
-            className="px-[10px] relative right-12  hover:text-secondary"
+            className="px-[10px] relative right-5  hover:text-secondary"
             href="#"
           >
             <FaUserAlt />
           </button>
           <button 
-            className="px-[10px] relative right-12  hover:text-secondary"
+            className="px-[10px] relative right-5 hover:text-secondary"
             href="#"
           >
             <FaShoppingCart />
           </button>
           
              <button onClick={() => setisSearchModal(true)}
-            className="px-[10px] relative right-12 color:white hover:text-secondary"
+            className="px-[10px] relative right-5 color:white hover:text-secondary"
           >
             <ImSearch />
           </button>
         
         
-          <button className="btn-primary relative right-7">Login</button>
+          <button className="btn-primary">Login</button>
         </div>
       </div>
-      {isSearchModal && <div className='text-9xl'>Search Mode</div>}
+      {isSearchModal && <Search setisSearchModal={setisSearchModal}/> }
+    
       
     </div>
   );
