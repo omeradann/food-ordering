@@ -7,11 +7,11 @@ import {CgCloseR} from "react-icons/cg";
 const Search = ({setisSearchModal}) => {
     
   return (
-   <div className='fixed top-0 left-0 w-screen h-screen bg-black z-50
-   after:content-[""] after:w-screen after:h-screen after:bg-white after:absolute after:top-0 after:left-0 grid place-content-center'> 
+   <div className='fixed top-0 left-0 w-screen h-screen z-50
+   after:content-[""] after:w-screen after:h-screen after:bg-white after:absolute after:opacity-60 after:top-0 after:left-0 grid place-content-center'> 
     <OutsideClickHandler onOutsideClick={() => setisSearchModal(false)}>
         <div className='w-full h-full grid place-content-center'>
-           <div className='relative z-50 text-black text-center w-[600px] h-[600px] bg-white border-2 p-5'>
+           <div className='relative z-50 text-black text-center md:w-[500px] w-[370px] h-[400px]  bg-white rounded-3xl border-2 p-5 '>
            <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-secondary relative inline-block">
             <Title addClass="text-[40px] text-center relative text-black">Search</Title></span>
             
@@ -28,7 +28,7 @@ const Search = ({setisSearchModal}) => {
 
            <div>
             <ul className='mt-6'>
-                <li className='flex items-center justify-between p-2 hover:bg-secondary transition-all rounded-md py-2 pr-3 my-5 shadow-sm focus:outline-none'>
+                <li className='flex h-10 items-center justify-between p-2 hover:bg-secondary transition-all rounded-md py-2 pr-3 my-5 shadow-sm focus:outline-none'>
                     <div className='flex'>
                         <img className='relative' src="/images/f1.png" 
                         alt=""
@@ -39,7 +39,7 @@ const Search = ({setisSearchModal}) => {
                     <span className='font-bold'>Good Pizza</span>
                     <span className='font-bold'>$10</span>
                 </li>
-                <li className='flex items-center justify-between p-2 hover:bg-secondary transition-all rounded-md py-2 pr-3 my-5 shadow-sm focus:outline-none'>
+                <li className='flex h-10 items-center justify-between p-2 hover:bg-secondary transition-all rounded-md py-2 pr-3 my-5 shadow-sm focus:outline-none'>
                     <div className='flex'>
                         <img className='relative' src="/images/f1.png" 
                         alt=""
@@ -50,7 +50,7 @@ const Search = ({setisSearchModal}) => {
                     <span className='font-bold'>Good Pizza</span>
                     <span className='font-bold'>$10</span>
                 </li>
-                <li className='flex items-center justify-between p-2 hover:bg-secondary transition-all rounded-md py-2 pr-3 my-5 shadow-sm focus:outline-none'>
+                <li className='flex h-10 items-center justify-between p-2 hover:bg-secondary transition-all rounded-md py-2 pr-3 my-5 shadow-sm focus:outline-none'>
                     <div className='flex'>
                         <img className='relative' src="/images/f1.png" 
                         alt=""
@@ -65,6 +65,7 @@ const Search = ({setisSearchModal}) => {
             <button
             className="absolute top-2 right-2"
             href="#"
+            onClick={() => setisSearchModal(false)}
           >
             <CgCloseR size={20} className=' hover:text-secondary transition-all'/>
           </button>
