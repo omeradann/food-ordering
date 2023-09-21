@@ -16,9 +16,10 @@ const Carousel = () => {
           />
         </div>
       </div>
-      <div className="relative z-50 top-40 text-white flex flex-col items-start">
-        <Title>Fast Food Restaurant</Title>
-        <p>
+      <div className="relative z-50 top-40 text-white flex flex-col items-start gap-y-10">
+        
+        <Title addClass="text-6xl">Fast Food Restaurant</Title>
+        <p className="">
           Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente
           ad mollitia laborum quam quisquam esse error unde. Tempora ex
           doloremque, labore, sunt repellat dolore, iste magni quos nihil
