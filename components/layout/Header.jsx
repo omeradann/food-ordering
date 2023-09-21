@@ -6,14 +6,17 @@ import { TiThMenu } from "react-icons/ti";
 import {CgCloseR} from "react-icons/cg";
 import Logo from "../ui/Logo";
 import Search from "../ui/Search";
+import { useRouter } from "next/router";
 
 
 const Header = () => {
   const [isSearchModal, setisSearchModal] = useState(false);
   const [isMenuModal, setisMenuModal] = useState(false);
+
+  const router = useRouter();
   
   return (
-    <div className="h-[5.5rem] bg-primary">
+    <div className={`h-[5.5rem z-40 relative ${router.asPath === "/" ? "bg-transparent" : "bg-primary"}`}>
       <div className="container mx-auto text-white flex justify-between items-center h-full">
         <div className="">
           <Logo />
