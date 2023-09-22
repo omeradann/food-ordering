@@ -9,6 +9,7 @@ import Search from "../ui/Search";
 import { useRouter } from "next/router";
 
 
+
 const Header = () => {
   const [isSearchModal, setisSearchModal] = useState(false);
   const [isMenuModal, setisMenuModal] = useState(false);
@@ -56,28 +57,28 @@ const Header = () => {
         </nav>
         <div className="flex m-10 items-center">
           <button
-            className="px-[10px] relative left-5 hover:text-secondary"
+            className="px-[10px] relative left-18 hover:text-secondary"
             href="#"
           >
             <FaUserAlt />
           </button>
           <button 
-            className="px-[10px] relative left-5 hover:text-secondary"
+            className="px-[10px] relative left-18 hover:text-secondary"
             href="#"
           >
             <FaShoppingCart />
           </button>
           
              <button onClick={() => setisSearchModal(true)}
-            className="px-[10px]  relative left-5 color:white hover:text-secondary"
+            className="px-[10px]  relative left-18 color:white hover:text-secondary"
           >
             <ImSearch />
           </button>
         
         
-          <button className="btn-primary md:inline-block hidden sm relative left-10">Login</button>
+          <button className="btn-primary md:inline-block hidden sm relative left-6">Login</button>
         </div>
-        <button onClick={() => setisMenuModal(true)} className="color:white hover:text-secondary text-lg relative right-6 sm:hidden inline-block">
+        <button onClick={() => setisMenuModal(true)} className="color:white hover:text-secondary text-lg relative  sm:hidden inline-block">
         <TiThMenu/>
         </button>
         
