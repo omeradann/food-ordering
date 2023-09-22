@@ -13,14 +13,6 @@ const Carousel = () => {
     arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
-    appenDots: (dots) => (
-      <div style={{
-        color: "yellow",
-        padding: "10px",
-      }}>
-       <ul style={{marignTop: "10px"}}>{dots}</ul>
-      </div>
-    ),
     customPaging: (i) => (
       <div className="w-3 h-3 border bg-white rounded-full mt-10 flex justify-start"></div>
     )
