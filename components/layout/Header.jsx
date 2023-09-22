@@ -16,13 +16,13 @@ const Header = () => {
   const router = useRouter();
   
   return (
-    <div className={`h-[5.5rem z-40 relative ${router.asPath === "/" ? "bg-transparent" : "bg-primary"}`}>
+    <div className={`h-[5.5rem z-50 relative ${router.asPath === "/" ? "bg-transparent" : "bg-primary"}`}>
       <div className="container mx-auto text-white flex justify-between items-center h-full">
         <div className="">
           <Logo />
         </div>
-        <nav className={`sm:static absolute top-0 left-0 sm:w-auto sm:h-auto w-full h-full h-screen sm:text-white text-black sm:bg-transparent bg-white sm:flex hidden ${isMenuModal === true && "!grid place-content-center"}`}>
-          <ul className="flex gap-x-2 sm:flex-row flex-col uppercase items-center relative left-16 word-wrap:normal">
+        <nav className={`sm:static absolute top-0 left-0 sm:w-auto sm:h-auto w-full h-screen sm:text-white text-black sm:bg-transparent bg-white sm:flex hidden ${isMenuModal === true && "!grid place-content-center"}`}>
+          <ul className="flex gap-x-2 sm:flex-row flex-col uppercase items-center relative word-wrap:normal">
             <li className="nav-item active px-[5px] hover:text-secondary">
               <a className="nav-link" href="index.html">
                 Home <span className="sr-only">(current)</span>
