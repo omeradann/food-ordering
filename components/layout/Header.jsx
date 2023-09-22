@@ -22,7 +22,7 @@ const Header = () => {
           <Logo />
         </div>
         <nav className={`sm:static absolute top-0 left-0 sm:w-auto sm:h-auto w-full h-screen sm:text-white text-black sm:bg-transparent bg-white sm:flex hidden ${isMenuModal === true && "!grid place-content-center"}`}>
-          <ul className="flex gap-x-2 sm:flex-row flex-col uppercase items-center relative word-wrap:normal">
+          <ul className="flex gap-x-2 2xl:left-20 sm:flex-row flex-col uppercase items-center relative word-wrap:normal">
             <li className="nav-item active px-[5px] hover:text-secondary">
               <a className="nav-link" href="index.html">
                 Home <span className="sr-only">(current)</span>
