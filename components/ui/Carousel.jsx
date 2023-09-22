@@ -5,7 +5,7 @@ import Title from "./Title";
 const Carousel = () => {
   return (
     <div className="h-screen w-full container mx-auto -mt-[120px]">
-      <div className="absolute left-0 w-full h-full ">
+      <div className="absolute left-0 w-full h-full">
         <div className="relative h-full w-full">
           <Image
             src="/images/hero-bg.jpg"
@@ -16,7 +16,7 @@ const Carousel = () => {
           />
         </div>
       </div>
-      <div className="relative z-50 top-40 text-white flex flex-col items-start gap-y-10">
+      <div className="relative  z-50 top-40 text-white flex flex-col items-start gap-y-10">
         
         <Title addClass="text-6xl">Fast Food Restaurant</Title>
         <p className="text-sm w-2/5">
