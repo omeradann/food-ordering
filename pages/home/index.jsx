@@ -1,4 +1,6 @@
-import Carousel from "../../components/ui/Carousel";
+import Campaings from "../../components/Campaings";
+import Carousel from "../../components/Carousel";
+import Deneme from "../../components/Deneme"
 
 const Home = () => {
 
@@ -6,6 +8,8 @@ const Home = () => {
   return (
     <div>
       <Carousel/>
+      <Campaings/>
+      {/* <Deneme/> */}
     </div>
 )
 }

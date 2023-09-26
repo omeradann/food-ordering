@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Title from "./Title";
+import Title from "./ui/Title";
 import Slider from "react-slick";
 
 const Carousel = () => {
@@ -19,15 +19,14 @@ const Carousel = () => {
 
   };
   return (
-    <div className="w-full h-full container mx-auto flex-auto -mt-[120px]">
-      <div className="absolute left-0">
+    <div className="w-full min-h-full container mx-auto flex-auto -mt-[120px]">
+      <div className="absolute top-0 left-0 w-full h-full ">
         <div className="relative h-full w-full">
           <Image
             src="/images/hero-bg.jpg"
-            width={5000}
-            height={5000}
+            layout="fill"
             alt=""
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "cover"}}
           />
         </div>
       </div>
