@@ -27,9 +27,3 @@ body {
 .slick-dots div{
   @apply !m-0 !mt-4 p-2
 }
-
-.your-container {
-  background-image: url('/images/hero-bg.jpg');
-  background-size: cover;
-  min-height: 110vh;
-}
