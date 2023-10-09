@@ -5,7 +5,7 @@ import MenuItem from './MenuItem'
 function MenuWrapper() {
   return (
     <div className='container mx-auto mb-20'>
-        <div className='flex flex-col items-center '>
+        <div className='flex flex-col items-center'>
         <Title addClass="text-4xl">Our Menu</Title>
         <div className='flex gap-x-6 mt-10'>
             <button className='px-6 py-2 bg-primary rounded-3xl text-white'>All</button>
@@ -15,7 +15,7 @@ function MenuWrapper() {
         </div>
         </div>
         
-        <div className='mt-8 grid grid-cols-3 gap-4'>
+        <div className='mt-8 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4'>
             <MenuItem/>
             <MenuItem/>
             <MenuItem/>
