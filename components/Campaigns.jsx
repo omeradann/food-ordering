@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Title from "./ui/Title";
+import { FaShoppingCart } from "react-icons/fa";
 
 
 const CampaingItem = () => {
@@ -18,10 +19,12 @@ const CampaingItem = () => {
     </div>
     <div className="text-white">
     <Title addClass="text-2xl">Tasty Thursdays</Title>
-    <div>
-      <span className="text-4xl font-dancing font-bold">20%</span>
-      <span className="font-dancing m-1">Off</span>
+    <div className="font-dancing my-3">
+      <span className="text-4xl font-bold">20%</span>
+      <span className="m-1">Off</span>
     </div>
+    <button className="text-white btn-primary flex items-center gap-x-2">Order Now <FaShoppingCart size={20}/></button>
+  
     
     </div>
     </div>
@@ -32,7 +35,7 @@ const CampaingItem = () => {
 
 const Campaigns = () => {
   return (
-    <div className="flex justify-between container mx-auto py-20 my-20 gap-7">
+    <div className="flex justify-between container mx-auto py-20 my-20 gap-7 flex-wrap">
         <CampaingItem/>
         <CampaingItem/>
 
