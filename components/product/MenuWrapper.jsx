@@ -7,7 +7,7 @@ function MenuWrapper() {
     <div className='container mx-auto mb-20'>
         <div className='flex flex-col items-center '>
         <Title addClass="text-4xl">Our Menu</Title>
-        <div className='flex gap-x-10 mt-10'>
+        <div className='flex gap-x-6 mt-10'>
             <button className='px-6 py-2 bg-primary rounded-3xl text-white'>All</button>
             <button className='px-6 py-2 rounded-3xl'>Burger</button>
             <button className='px-6 py-2 rounded-3xl'>Pizza</button>

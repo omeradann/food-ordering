@@ -4,8 +4,8 @@ import { FaShoppingCart } from "react-icons/fa";
 const MenuItem = () => {
   return (
     <div className='mt-10 bg-primary rounded-3xl'>
-        <div className="w-full bg-[#f1f2f3] h-[210px] rounded-bl-[46px] grid place-content-center">
-            <div className="relative w-40 h-40 rounded-md">
+        <div className="w-full bg-[#f1f2f3] h-[210px] rounded-bl-[46px] rounded-tl-2xl  rounded-tr-2xl grid place-content-center">
+            <div className="relative w-40 h-40">
         <Image
         className="hover:scale-110 transition-all"
         src="/images/f1.png"
